@@ -7,7 +7,7 @@ main{
     grid-template-columns: repeat(2, 1fr);
     gap:30px;
     align-items: center;
-    border: 2px solid khaki;
+    /* border: 2px solid khaki; */
 }
 
 main > div > img{
@@ -18,4 +18,38 @@ main > div > img{
 
 footer{
     text-align: center;
+}
+
+.button{
+    background-color: black;
+    color: white;
+    width: 200px;
+    height: 60px;
+    padding: 15px;
+
+}
+
+/* responsive styles */
+
+@media screen and (max-width: 576px) {
+    main{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .content-title{
+        font-size: 44px;
+    }
+
+    .content-info{
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+
+    .button{
+        margin-bottom: 50px;
+    }
+
+    
 }
